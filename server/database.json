@@ -1,0 +1,100 @@
+{
+  "orgs": {
+    "org_celesta": {
+      "id": "org_celesta",
+      "name": "Celesta Healthcare",
+      "logo": "🏥",
+      "industry": "Healthcare & Medical Devices",
+      "membersCount": 8
+    },
+    "org_abtech": {
+      "id": "org_abtech",
+      "name": "AB Technology",
+      "logo": "💻",
+      "industry": "Software & Cloud Engineering",
+      "membersCount": 14
+    }
+  },
+  "users": [
+    {
+      "id": "usr_celesta_admin",
+      "name": "Dr. Vikram Sharma",
+      "email": "vikram@celesta.health",
+      "role": "Admin",
+      "title": "Chief Technology Officer",
+      "avatar": "👨‍⚕️",
+      "bio": "Leading medical software integration & printer setups at Celesta Healthcare.",
+      "orgId": "org_celesta"
+    },
+    {
+      "id": "usr_abtech_admin",
+      "name": "Arjun Mehta",
+      "email": "arjun@abtechnology.com",
+      "role": "Admin",
+      "title": "Principal Architect",
+      "avatar": "👨‍💻",
+      "bio": "Building microservices & developer frameworks at AB Technology.",
+      "orgId": "org_abtech"
+    }
+  ],
+  "session": {
+    "user": {
+      "id": "usr_celesta_admin",
+      "name": "Dr. Vikram Sharma",
+      "email": "vikram@celesta.health",
+      "role": "Admin",
+      "title": "Chief Technology Officer",
+      "avatar": "👨‍⚕️",
+      "bio": "Leading medical software integration & printer setups at Celesta Healthcare.",
+      "orgId": "org_celesta"
+    },
+    "org": {
+      "id": "org_celesta",
+      "name": "Celesta Healthcare",
+      "logo": "🏥",
+      "industry": "Healthcare & Medical Devices",
+      "membersCount": 8
+    }
+  },
+  "docs": {
+    "org_celesta": [
+      {
+        "id": "celesta-xerox-setup",
+        "orgId": "org_celesta",
+        "title": "Cian Healthcare - Xerox PostScript Printer Setup",
+        "filename": "README_Cian_Xerox_PostScript_Setup.md",
+        "category": "Healthcare Setup",
+        "tags": ["Windows 11", "Printer", "Celesta"],
+        "favorite": true,
+        "createdAt": "2026-08-17T10:00:00.000Z",
+        "content": "# Celesta Healthcare -- Xerox PostScript Printer Setup\n\n## Purpose\n\nThis document is for setting up the PostScript printer required by the\nCelesta Healthcare Purchase Module for PDF report generation on Windows 11.\n\nThe error this setup fixes is:\n\n> Postscript Printer is not set up properly, can not create the PDF report.\n\n---\n\n## 1. Required Configuration\n\n-   Operating System: Windows 11 64-bit\n-   Printer Driver: **Xerox Global Print Driver PS**\n-   Driver Type: **x64, Type 3 -- User Mode**\n-   Printer Name: **Xerox Global Print Driver PS**\n-   Celesta Setup Module → Server Post Script Printer Name: **Xerox Global Print Driver PS**\n\n> [!IMPORTANT]\n> Select the **PS** driver. Do not select PCL, PCL6, Microsoft Print to PDF, or another non-PostScript driver.\n"
+      },
+      {
+        "id": "celesta-patient-api",
+        "orgId": "org_celesta",
+        "title": "Celesta Patient Portal API Docs",
+        "filename": "PATIENT_API.md",
+        "category": "Medical Specs",
+        "tags": ["API", "HIPAA", "Healthcare"],
+        "favorite": false,
+        "createdAt": "2026-08-16T14:20:00.000Z",
+        "content": "# 🏥 Celesta Patient Portal API\n\n> Secure REST API endpoints for electronic health records (EHR) and appointment scheduling.\n\n## 🔐 Authentication\n\nAll requests require HIPAA-compliant OAuth2 JWT token:\n\n```http\nAuthorization: Bearer celesta_sec_99381a\n```\n\n> [!WARNING]\n> Patient data access is audited strictly in compliance with medical data regulations.\n"
+      }
+    ],
+    "org_abtech": [
+      {
+        "id": "abtech-nexus-engine",
+        "orgId": "org_abtech",
+        "title": "AB Tech Cloud Platform Architecture",
+        "filename": "README.md",
+        "category": "Software Engine",
+        "tags": ["React", "Microservices", "AB Technology"],
+        "favorite": true,
+        "createdAt": "2026-08-17T11:00:00.000Z",
+        "content": "# 💻 AB Technology Cloud Engine\n\n> High-performance distributed engine for AB Technology cloud enterprise applications.\n\n![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)\n![Status](https://img.shields.io/badge/status-active-brightgreen.svg)\n\n---\n\n## ✨ Microservices Overview\n\n- **Auth Core**: Distributed OAuth2 & JWT token issuer.\n- **Data Pipeline**: Real-time Kafka stream processor.\n- **UI Engine**: React 19 micro-frontend container.\n\n```bash\n# Start local dev stack\nnpm run start:abtech\n```\n"
+      }
+    ]
+  },
+  "versions": {},
+  "analytics": {}
+}
